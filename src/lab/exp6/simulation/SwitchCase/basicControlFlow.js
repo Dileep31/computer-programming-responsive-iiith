@@ -240,6 +240,10 @@ window.view = {
 				this.setInnerHtml('outputDayId', 'INVALID INPUT');
 	 		}
 	 	}
+	 	if ( model.inputNumber ==0){
+	 		this.codeExecutionWithColour();
+				this.setInnerHtml('outputDayId', 'INVALID INPUT');
+	 	}
 	 	if (model.inputNumber === 7) {
 	 		if (this.nextSiblingElement.id === 'holidayId') {
 				this.codeExecutionWithColour();
